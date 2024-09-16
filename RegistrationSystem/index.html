@@ -1,0 +1,91 @@
+<!-- //html -->
+<!DOCTYPE html>
+<html lang="en">
+  <!-- head section  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Student Registration System</title>
+  </head>
+  <!-- body section  -->
+  <body>
+    <!-- header section -->
+    <header>
+      <h1>Student Registration System</h1>
+      <p>A system to register students details and manage records.</p>
+    </header>
+
+    <!-- form and input field section -->
+    <section>
+      <h2 style="text-align: center">Register Student</h2>
+      <form id="student-form">
+        <label for="student-name">Student Name:</label>
+        <input
+          type="text"
+          id="student-name"
+          name="student-name"
+          placeholder="Enter Student Name"
+          required
+        /><br /><br />
+
+        <label for="student-id">Student ID:</label>
+        <input
+          type="number"
+          id="student-id"
+          name="student-id"
+          placeholder="Enter Student ID"
+          required
+        /><br /><br />
+
+        <label for="email-id">Email ID:</label>
+        <input
+          type="email"
+          id="email-id"
+          name="email-id"
+          placeholder="Enter Email ID"
+          required
+        /><br /><br />
+
+        <label for="contact-no">Contact No:</label>
+        <input
+          type="number"
+          id="contact-no"
+          name="contact-no"
+          placeholder="Enter Contact No"
+          required
+        /><br /><br />
+
+        <label for="dob">Date Of Birth:</label>
+        <input
+          type="date"
+          id="dob"
+          name="dob"
+          placeholder="Enter Date Of Birth"
+          required
+        /><br /><br />
+
+        <button id="submit-btn">Submit</button>
+      </form>
+    </section>
+
+    <!-- display section -->
+    <section id="display-section">
+      <h2 style="text-align: center">Registered Student Details</h2>
+      <table id="student-table">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Student ID</th>
+            <th>Email ID</th>
+            <th>Contact No</th>
+            <th>Date Of Birth</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="student-table-body"></tbody>
+      </table>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
